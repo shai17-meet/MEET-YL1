@@ -73,8 +73,8 @@ while True:
 			if(ball1.ycor() + ball1.radius>=brick.ycor() - brick.height/2)and(ball1.ycor()-ball1.radius<=brick.ycor() + brick.height/2):
 				ball1.dy *= -1
  			
-			#if(ball1.xcor() + ball1.radius>=brick.xcor() - brick.width/2)and(ball1.xcor()-ball1.radius<=brick.xcor() + brick.width/2):
-				#ball1.dx *= -1
+			if(ball1.xcor() + ball1.radius>=brick.xcor() - brick.width/2)and(ball1.xcor()-ball1.radius<=brick.xcor() + brick.width/2):
+				ball1.dx *= -1
 
 			brick.hideturtle()
 			brickslist.remove(brick)
